@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       testimonial_2: '“Очень удобный сервис, всё сделали быстро и с душой!”',
       testimonial_2_author: 'Наргиза & Бекзат',
       testimonial_3: '“Наши гости были в восторге от приглашения, спасибо Wedding.KG!”',
-      testimonial_3_author: 'Гульназ & Эрнис',
+      testimonial_3_author: 'Гульназ & Кутман',
       contacts_title: 'Свяжитесь с нами',
       email_label: 'Email:',
       phone_label: 'Телефон:',
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       testimonial_2: '“Very convenient service, everything was done quickly and with care!”',
       testimonial_2_author: 'Nargiza & Bekzat',
       testimonial_3: '“Our guests loved the invitation, thank you Wedding.KG!”',
-      testimonial_3_author: 'Gulnaz & Ernis',
+      testimonial_3_author: 'Gulnaz & Kutman',
       contacts_title: 'Contact Us',
       email_label: 'Email:',
       phone_label: 'Phone:',
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       testimonial_2: '“Абдан ыңгайлуу сервис, баары тез жана жан дили менен жасалды!”',
       testimonial_2_author: 'Наргиза & Бекзат',
       testimonial_3: '“Биздин коноктор чакыруудан кубанып калышты, Wedding.KGге рахмат!”',
-      testimonial_3_author: 'Гульназ & Эрнис',
+      testimonial_3_author: 'Гульназ & Kutman',
       contacts_title: 'Биз менен байланышыңыз',
       email_label: 'Email:',
       phone_label: 'Телефон:',
@@ -235,3 +235,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('dark-theme');
   });
 });
+
