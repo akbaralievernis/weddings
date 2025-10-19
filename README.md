@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="design-card" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://picsum.photos/seed/kyrgyz/400/300" alt="Kyrgyz Style" loading="lazy">
+          <img src="https://www.google.com/imgres?q=%D1%81%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0&imgurl=https%3A%2F%2Fstatic.tildacdn.com%2Ftild6139-3466-4433-a564-316666376137%2FPPu1wH0hqDA.jpg&imgrefurl=https%3A%2F%2Fhouseforwedding.ru%2Fvesennyaya-svadba&docid=WoN8R5mRUazv-M&tbnid=q57YchA7CTtr7M&vet=12ahUKEwj2uo_27rCQAxXnHRAIHQaoKBEQM3oECB0QAA..i&w=1200&h=800&hcb=2&ved=2ahUKEwj2uo_27rCQAxXnHRAIHQaoKBEQM3oECB0QAA" alt="Kyrgyz Style" loading="lazy">
           <h3 data-i18n="design_kyrgyz">Kyrgyz Style</h3>
           <p data-i18n="design_kyrgyz_desc">Национальные орнаменты, мягкие цвета.</p>
           <div class="design-actions">
