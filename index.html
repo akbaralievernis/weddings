@@ -6,7 +6,7 @@
   <meta name="description" content="Wedding.KG — Создайте своё свадебное приглашение онлайн. Выберите дизайн, укажите данные и получите готовый сайт за 1 день!" />
   <title data-i18n="title">Wedding.KG — Свадебные приглашения онлайн</title>
   <link rel="icon" href="favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,6 +27,7 @@
           <a href="#hero" class="nav-link" data-i18n="home">Главная</a>
           <a href="#designs" class="nav-link" data-i18n="designs">Дизайны</a>
           <a href="#order" class="nav-link" data-i18n="order">Заказ</a>
+          <a href="#advantages" class="nav-link" data-i18n="advantages">Преимущества</a>
           <a href="#testimonials" class="nav-link" data-i18n="testimonials">Отзывы</a>
           <a href="#contacts" class="nav-link" data-i18n="contacts">Контакты</a>
         </nav>
@@ -52,7 +53,10 @@
       <div class="hero-inner">
         <h1 class="hero-title" data-i18n="hero_title">Создай своё свадебное приглашение онлайн 💍</h1>
         <p class="hero-subtitle" data-i18n="hero_subtitle">Выбери дизайн, укажи дату — и получи красивый сайт-приглашение за 1 день.</p>
-        <a href="#order" class="hero-btn" data-i18n="start_order">Начать заказ</a>
+        <div class="hero-actions">
+          <a href="#order" class="hero-btn" data-i18n="start_order">Начать заказ</a>
+          <a href="#designs" class="hero-btn secondary" data-i18n="view_designs">Смотреть дизайны</a>
+        </div>
       </div>
     </div>
   </section>
@@ -60,68 +64,135 @@
   <!-- Designs Section -->
   <section id="designs" class="section" data-aos="fade-up">
     <div class="container">
-      <h2 data-i18n="designs_title">Выберите дизайн</h2>
+      <h2 class="section-title" data-i18n="designs_title">Выберите дизайн</h2>
+      <p class="section-subtitle" data-i18n="designs_subtitle">3 уникальных стиля для вашего особенного дня</p>
       <div class="designs-grid">
         <div class="design-card" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://picsum.photos/seed/minimal/400/300" alt="Minimal Gold" loading="lazy">
-          <h3 data-i18n="design_minimal">Minimal Gold</h3>
-          <p data-i18n="design_minimal_desc">Чистый минимализм с золотыми акцентами.</p>
-          <div class="design-actions">
-            <a href="https://akbaralievernis.github.io/wedding/" class="btn secondary" target="_blank" data-i18n="view_example">Посмотреть пример</a>
-            <button class="btn primary" data-design-id="minimal-gold" data-i18n="select_design">Выбрать</button>
+          <div class="design-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNc_LTaQc6C0ZUQdG7GTCs2YOZ8nY955M9xQ&s" alt="Minimal Gold" loading="lazy">
+            <div class="design-overlay">
+              <a href="https://akbaralievernis.github.io/wedding/" class="btn view-btn" data-i18n="view_example">Посмотреть пример</a>
+            </div>
+          </div>
+          <div class="design-content">
+            <h3 data-i18n="design_minimal">Minimal Gold</h3>
+            <p data-i18n="design_minimal_desc">Чистый минимализм с золотыми акцентами.</p>
+            <button class="btn primary select-btn" data-design-id="minimal-gold" data-i18n="select_design">Выбрать</button>
           </div>
         </div>
         <div class="design-card" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://picsum.photos/seed/classic/400/300" alt="Classic Love" loading="lazy">
-          <h3 data-i18n="design_classic">Classic Love</h3>
-          <p data-i18n="design_classic_desc">Элегантная классика и каллиграфия.</p>
-          <div class="design-actions">
-            <a href="https://akbaralievernis.github.io/wedding/" class="btn secondary" target="_blank" data-i18n="view_example">Посмотреть пример</a>
-            <button class="btn primary" data-design-id="classic-love" data-i18n="select_design">Выбрать</button>
+          <div class="design-image">
+            <img src="https://as1.ftcdn.net/v2/jpg/03/24/18/34/1000_F_324183473_Vs025hFZY3FByyIxT24uenvsKUwi1iNN.jpg?sa=1" alt="Elegant Silver" loading="lazy">
+            <div class="design-overlay">
+              <a href="https://akbaralievernis.github.io/elegant/" class="btn view-btn" data-i18n="view_example">Посмотреть пример</a>
+            </div>
+          </div>
+          <div class="design-content">
+            <h3 data-i18n="design_elegant">Elegant Silver</h3>
+            <p data-i18n="design_elegant_desc">Элегантный стиль с серебряными акцентами.</p>
+            <button class="btn primary select-btn" data-design-id="elegant-silver" data-i18n="select_design">Выбрать</button>
           </div>
         </div>
         <div class="design-card" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://picsum.photos/seed/kyrgyz/400/300" alt="Kyrgyz Style" loading="lazy">
-          <h3 data-i18n="design_kyrgyz">Kyrgyz Style</h3>
-          <p data-i18n="design_kyrgyz_desc">Национальные орнаменты, мягкие цвета.</p>
-          <div class="design-actions">
-            <a href="https://akbaralievernis.github.io/wedding/" class="btn secondary" target="_blank" data-i18n="view_example">Посмотреть пример</a>
-            <button class="btn primary" data-design-id="kyrgyz-style" data-i18n="select_design">Выбрать</button>
+          <div class="design-image">
+            <img src="https://i.etsystatic.com/23399565/r/il/3f66f1/3711587942/il_570xN.3711587942_qnue.jpg" alt="Romantic Rose" loading="lazy">
+            <div class="design-overlay">
+              <a href="https://akbaralievernis.github.io/elegant/" class="btn view-btn" data-i18n="view_example">Посмотреть пример</a>
+            </div>
+          </div>
+          <div class="design-content">
+            <h3 data-i18n="design_romantic">Romantic Rose</h3>
+            <p data-i18n="design_romantic_desc">Романтический стиль с розовыми акцентами.</p>
+            <button class="btn primary select-btn" data-design-id="romantic-rose" data-i18n="select_design">Выбрать</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Order Form Section -->
+  <!-- Order Section -->
   <section id="order" class="section" data-aos="fade-up">
     <div class="container narrow">
-      <h2 data-i18n="order_title">Оформить заказ</h2>
-      <p class="order-subtitle" data-i18n="order_subtitle">Заполните данные, и мы создадим ваше идеальное приглашение!</p>
+      <h2 class="section-title" data-i18n="order_title">Закажите приглашение</h2>
+      <p class="section-subtitle" data-i18n="order_subtitle">Заполните форму, и мы создадим ваш уникальный сайт-приглашение</p>
       <form id="order-form" class="order-form">
-        <input id="names" placeholder="Имена жениха и невесты*" required data-i18n-placeholder="names_ph">
-        <input id="wedding_date" type="date" required data-i18n-placeholder="wedding_date_ph">
-        <input id="phone" type="tel" placeholder="Телефон*" required data-i18n-placeholder="phone_ph">
-        <input id="contact" placeholder="Email или Telegram*" required data-i18n-placeholder="contact_ph">
-        <input id="design_id" type="hidden" value="">
-        <textarea id="comments" placeholder="Комментарий (пожелания, язык приглашения и т.д.)" data-i18n-placeholder="comments_ph"></textarea>
-        <button class="btn primary" type="submit" data-i18n="submit_order">Отправить заказ 💌</button>
-        <div class="loader" style="display: none;"></div>
+        <div class="selected-design" id="selected-design" style="display: none;">
+          <span data-i18n="selected_design">Выбранный дизайн:</span>
+          <span id="design-name"></span>
+        </div>
+        <input type="hidden" id="design_id" name="design_id" required>
+        <div class="form-group">
+          <label for="names" data-i18n="names_label">Имена жениха и невесты:</label>
+          <input type="text" id="names" required data-i18n-placeholder="names_placeholder">
+        </div>
+        <div class="form-group">
+          <label for="wedding_date" data-i18n="date_label">Дата свадьбы:</label>
+          <input type="date" id="wedding_date" required>
+        </div>
+        <div class="form-group">
+          <label for="phone" data-i18n="phone_label">Ваш телефон:</label>
+          <input type="tel" id="phone" required data-i18n-placeholder="phone_placeholder">
+        </div>
+        <div class="form-group">
+          <label for="contact" data-i18n="contact_label">Предпочтительный способ связи:</label>
+          <select id="contact" required>
+            <option value="telegram" data-i18n="telegram">Telegram</option>
+            <option value="instagram" data-i18n="instagram">Instagram</option>
+            <option value="phone" data-i18n="phone">Телефон</option>
+            <option value="email" data-i18n="email">Email</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments" data-i18n="comments_label">Дополнительные пожелания:</label>
+          <textarea id="comments" data-i18n-placeholder="comments_placeholder"></textarea>
+        </div>
+        <button class="btn primary submit-btn" type="submit" data-i18n="submit_order">
+          <span class="btn-text">Отправить заказ 💌</span>
+          <div class="btn-loader" style="display: none;"></div>
+        </button>
       </form>
-      <p class="success-message" style="display: none;" data-i18n="order_success">Спасибо! Мы свяжемся с вами в течение 24 часов.</p>
+      <div class="form-message success-message" style="display: none;" data-i18n="order_success">
+        <div class="message-icon">✓</div>
+        <p>Спасибо! Мы свяжемся с вами в течение 24 часов.</p>
+      </div>
+      <div class="form-message error-message" style="display: none;">
+        <div class="message-icon">!</div>
+        <p>Произошла ошибка. Пожалуйста, попробуйте еще раз или свяжитесь с нами напрямую.</p>
+      </div>
     </div>
   </section>
 
   <!-- Advantages Section -->
   <section id="advantages" class="section" data-aos="fade-up">
     <div class="container">
-      <h2 data-i18n="advantages_title">Почему выбирают нас</h2>
+      <h2 class="section-title" data-i18n="advantages_title">Почему выбирают нас</h2>
+      <p class="section-subtitle" data-i18n="advantages_subtitle">Мы делаем ваш особенный день еще прекраснее</p>
       <div class="advantages-grid">
-        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="100">💍 <span data-i18n="advantage_1">Готово за 1 день</span></div>
-        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="200">🌐 <span data-i18n="advantage_2">3 языка (KG/RU/EN)</span></div>
-        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="300">📱 <span data-i18n="advantage_3">Работает на всех устройствах</span></div>
-        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="400">💌 <span data-i18n="advantage_4">Индивидуальный дизайн</span></div>
-        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="500">💸 <span data-i18n="advantage_5">Доступная цена — от 2000 сомов</span></div>
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="advantage-icon">💍</div>
+          <h4 data-i18n="advantage_1">Готово за 1 день</h4>
+          <p>Быстрая реализация без потери качества</p>
+        </div>
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="advantage-icon">🌐</div>
+          <h4 data-i18n="advantage_2">3 языка (KG/RU/EN)</h4>
+          <p>Поддержка основных языков для ваших гостей</p>
+        </div>
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="advantage-icon">📱</div>
+          <h4 data-i18n="advantage_3">Работает на всех устройствах</h4>
+          <p>Идеальное отображение на любом экране</p>
+        </div>
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="advantage-icon">💌</div>
+          <h4 data-i18n="advantage_4">Индивидуальный дизайн</h4>
+          <p>Уникальное оформление для вашей пары</p>
+        </div>
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="advantage-icon">💸</div>
+          <h4 data-i18n="advantage_5">Доступная цена — от 2000 сомов</h4>
+          <p>Качественное решение для любого бюджета</p>
+        </div>
       </div>
     </div>
   </section>
@@ -129,22 +200,47 @@
   <!-- Testimonials Section -->
   <section id="testimonials" class="section" data-aos="fade-up">
     <div class="container">
-      <h2 data-i18n="testimonials_title">Отзывы наших клиентов</h2>
+      <h2 class="section-title" data-i18n="testimonials_title">Отзывы наших клиентов</h2>
+      <p class="section-subtitle" data-i18n="testimonials_subtitle">Что говорят пары, которые уже воспользовались нашими услугами</p>
       <div class="testimonials-grid">
         <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://picsum.photos/seed/testimonial1/100/100" alt="Aizhan & Taalay" loading="lazy">
-          <p data-i18n="testimonial_1">“Получили сайт-приглашение за пару часов — это было невероятно красиво!”</p>
-          <strong data-i18n="testimonial_1_author">Айжан & Таалай</strong>
+          <div class="testimonial-content">
+            <div class="quote-icon">"</div>
+            <p data-i18n="testimonial_1">"Получили сайт-приглашение за пару часов — это было невероятно красиво!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/seed/testimonial1/100/100" alt="Aizhan & Taalay" loading="lazy">
+            <div>
+              <strong data-i18n="testimonial_1_author">Айжан & Таалай</strong>
+              <span>Свадьба в Бишкеке</span>
+            </div>
+          </div>
         </div>
         <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://picsum.photos/seed/testimonial2/100/100" alt="Nargiza & Bekzat" loading="lazy">
-          <p data-i18n="testimonial_2">“Очень удобный сервис, всё сделали быстро и с душой!”</p>
-          <strong data-i18n="testimonial_2_author">Наргиза & Бекзат</strong>
+          <div class="testimonial-content">
+            <div class="quote-icon">"</div>
+            <p data-i18n="testimonial_2">"Очень удобный сервис, всё сделали быстро и с душой!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/seed/testimonial2/100/100" alt="Nargiza & Bekzat" loading="lazy">
+            <div>
+              <strong data-i18n="testimonial_2_author">Наргиза & Бекзат</strong>
+              <span>Свадьба в Оше</span>
+            </div>
+          </div>
         </div>
         <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://picsum.photos/seed/testimonial3/100/100" alt="Gulnaz & Ernis" loading="lazy">
-          <p data-i18n="testimonial_3">“Наши гости были в восторге от приглашения, спасибо Wedding.KG!”</p>
-          <strong data-i18n="testimonial_3_author">Гульназ & Кутман</strong>
+          <div class="testimonial-content">
+            <div class="quote-icon">"</div>
+            <p data-i18n="testimonial_3">"Наши гости были в восторге от приглашения, спасибо Wedding.KG!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/seed/testimonial3/100/100" alt="Gulnaz & Kutman" loading="lazy">
+            <div>
+              <strong data-i18n="testimonial_3_author">Гульназ & Кутман</strong>
+              <span>Свадьба в Кара-Балте</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -153,12 +249,37 @@
   <!-- Contacts Section -->
   <section id="contacts" class="section" data-aos="fade-up">
     <div class="container narrow">
-      <h2 data-i18n="contacts_title">Свяжитесь с нами</h2>
+      <h2 class="section-title" data-i18n="contacts_title">Свяжитесь с нами</h2>
+      <p class="section-subtitle" data-i18n="contacts_subtitle">Мы всегда рады ответить на ваши вопросы</p>
       <div class="contacts-grid">
-        <p><strong data-i18n="email_label">Email:</strong> <a href="mailto:astanovohrano@gmail.com">astanovohrano@gmail.com</a></p>
-        <p><strong data-i18n="phone_label">Телефон:</strong> <a href="tel:+996776230205">+996 776 230205</a></p>
-        <p><strong data-i18n="telegram_label">Telegram:</strong> <a href="https://t.me/Ernis" target="_blank">@Ernis</a></p>
-        <p><strong data-i18n="instagram_label">Instagram:</strong> <a href="https://instagram.com/wedding.kg" target="_blank">wedding.kg</a></p>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <strong data-i18n="email_label">Email:</strong>
+            <a href="mailto:astanovohrano@gmail.com">astanovohrano@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <strong data-i18n="phone_label">Телефон:</strong>
+            <a href="tel:+996998220607">+996 998220607</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✈️</div>
+          <div>
+            <strong data-i18n="telegram_label">Telegram:</strong>
+            <a href="https://t.me/Ernis" target="_blank">0998220607</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📷</div>
+          <div>
+            <strong data-i18n="instagram_label">Instagram:</strong>
+            <a href="https://instagram.com/_akbaraliev_ernis" target="_blank">@_akbaraliev_ernis</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -166,7 +287,19 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p data-i18n="footer">Wedding.KG © 2025 — Сделано с любовью 💍</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="brand" data-i18n="brand">Wedding.KG</a>
+          <p data-i18n="footer_tagline">Создаем красивые свадебные приглашения с любовью</p>
+        </div>
+        <div class="footer-links">
+          <a href="#designs" data-i18n="designs">Дизайны</a>
+          <a href="#order" data-i18n="order">Заказ</a>
+          <a href="#testimonials" data-i18n="testimonials">Отзывы</a>
+          <a href="#contacts" data-i18n="contacts">Контакты</a>
+        </div>
+      </div>
+      <p class="footer-copyright" data-i18n="footer">Wedding.KG © 2025 — Сделано с любовью 💍</p>
     </div>
   </footer>
 
@@ -177,9 +310,17 @@
     </svg>
   </button>
 
+  <!-- New Modal for Design Preview -->
+  <div id="design-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe id="design-iframe" src="" frameborder="0"></iframe>
+      <button id="select-from-modal" class="btn primary" data-i18n="select_design">Выбрать этот дизайн</button>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="app.js"></script>
 </body>
-
 </html>
